@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Virtual RealEstate</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-574-mexant.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+ 
+  <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-database.js"></script>
+
+</head>
+
+<body>
+  
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+           
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <ul class="nav">
+                <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                <li class="scroll-to-section"><a href="#top">Download</a></li>
+                <li class="scroll-to-section"><a href="#agent">Become Agent</a></li>
+                <li class="scroll-to-section"><a href="#about">About</a></li>
+                <li class="scroll-to-section"><a href="#testimonials">API Support</a></li>
+                <li class="signupLogin"><a href="register.html">Signup</a></li>
+                <li class="signupLogin"><a href="login.html">Login</a></li>
+            </ul>
+            
+            </ul>
+
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+            <script>
+              document.addEventListener('DOMContentLoaded', () => {
+                  // Retrieve the user's full name from localStorage
+                  var userFullName = localStorage.getItem('userFullName');
+          
+                  // If a full name is found in localStorage, update the navigation
+                  if (userFullName) {
+                      // Select all elements with the class 'signupLogin' and hide them
+                      document.querySelectorAll('.signupLogin').forEach(el => el.style.display = 'none');
+          
+                      // Select the navigation bar
+                      var nav = document.querySelector('.nav');
+          
+                      // Create a new list item for the user's greeting
+                      var helloItem = document.createElement('li');
+                      helloItem.textContent = 'Hello, ' + userFullName;
+                      helloItem.classList.add('userGreeting');
+          
+                      // Insert the new list item at the beginning of the navigation bar
+                      nav.insertBefore(helloItem, nav.firstChild);
+                  }
+              });
+          </script>
+          
+
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <div class="swiper-container" id="top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image:url(assets/images/realmain.jpg)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2>Experience Your <em> Dream Room </em> Virtually <br><em>No Visit Required!</em></h2>
+                  <div class="div-dec"></div>
+                  <p>Visiting Room Made Simple
+                    Visit Room without Visiting to the Room
+                    Abse Walls me no leakage sab kaam Virtual
+                    </p>
+                  <div class="buttons">
+
+                    <div class="orange-button">
+                      <a href="#">isspe click karega tho download hoga </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image:url(assets/images/slide-02.jpg)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+
+                  <h2>Virtual Room Viewings<br><em>Made Easy</em></h2>
+
+
+                  <div class="div-dec"></div>
+                  <p>You will see a bunch of free  when you search on Google.. It does not ask you anything in return. You have a
+                    total freedom to use any template for any purpose.</p>
+                  <div class="buttons">
+
+                    <div class="orange-button">
+                      <a href="#">Download App</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image:url(assets/images/slide-03.jpg)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2>Virtual Room Viewings<br><em>Made Easy</em></h2>
+
+
+                  <div class="div-dec"></div>
+                  <p>When you browse through different tags on, you can see a variety of CSS
+                   which are responsive website designs for different individual needs. Please tell your
+                    friends about our website. Thank you.</p>
+                  <div class="buttons">
+
+                    <div class="orange-button">
+                      <a href="#">Download App</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-archive"></i>
+            <h4>AR-VR</h4>
+            <p>TemplateMo website is the best for you to explore and download free website templates.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-cloud"></i>
+            <h4>=AR-VR</h4>
+            <p>Templates are based on Bootstrap 5 CSS framework. You can easily adapt or modify based on your needs.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-charging-station"></i>
+            <h4>Responsive Designs</h4>
+            <p>Allare 100% free to use for commercial or business websites.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-suitcase"></i>
+            <h4>Mobile and Tablet ready!</h4>
+            <p>Our are well-tested on mobile, tablet, and desktop compatibility.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-archway"></i>
+            <h4>Fast Customer Support</h4>
+            <p>Do not be hesitated to contact us if you have any question or concern about our templates.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-puzzle-piece"></i>
+            <h4>Fully Customizable</h4>
+            <p>If you have any idea or suggestion, feel free to let us know.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="simple-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <h4>Experience <em>AR-VR</em> and <strong>Enjoy</strong> Your Life Kids</h4>
+        </div>
+        <div class="col-lg-7">
+          <div class="buttons">
+            <div class="green-button">
+              <a href="#">Discover More</a>
+            </div>
+            <div class="orange-button">
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    form {
+        max-width: 800px;
+        margin: auto;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        margin-top: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .gender {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .gender label {
+        flex: 1;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+        .gender {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 400px) {
+        button {
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
+
+    @media (min-width: 600px) {
+        #submit {
+            width: auto; /* Auto width for larger screens */
+            margin-top: 25px;
+            font-size: 1.1em;
+        }
+    }
+</style>
+</head>
+<body>
+  <section class="agent" id="agent">
+
+    <form id="userForm" enctype="multipart/form-data">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required><br><br>
+
+      <label for="panCard">PAN Card Photo:</label>
+      <input type="file" id="panCard" name="panCard" accept="image/*" required><br><br>
+
+      <label for="propertyPhoto">Property Photo:</label>
+      <input type="file" id="propertyPhoto" name="propertyPhoto" accept="image/*" required><br><br>
+
+      <button type="submit">Submit</button>
+  </form>
+
+</section>
+
+
+  <script>
+const form = document.getElementById('userForm');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch('http://localhost:4000/create', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                alert(result.msg);
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error submitting the form.');
+            }
+        });
+  </script>
+
+
+
+
+    <!-- <script>
+        const stateByCountry = {
+            USA: ['New York', 'California', 'Illinois', 'Texas'],
+            Canada: ['Ontario', 'British Columbia', 'Quebec', 'Alberta'],
+            UK: ['England', 'Scotland', 'Wales', 'Northern Ireland'],
+            Australia: ['New South Wales', 'Victoria', 'Queensland', 'Western Australia'],
+            India: ['Maharashtra', 'Delhi', 'Karnataka', 'Telangana'],
+            Germany: ['Bavaria', 'Berlin', 'Hamburg', 'Hesse'],
+            France: ['Île-de-France', 'Auvergne-Rhône-Alpes', 'Provence-Alpes-Côte d\'Azur', 'Hauts-de-France'],
+            Japan: ['Tokyo', 'Osaka', 'Kyoto', 'Nagoya'], // Note: Japan is divided into prefectures rather than states
+            China: ['Beijing', 'Shanghai', 'Guangdong', 'Zhejiang'],
+            Brazil: ['São Paulo', 'Rio de Janeiro', 'Minas Gerais', 'Bahia'],
+            Mexico: ['Ciudad de México', 'Jalisco', 'Nuevo León', 'Puebla']
+            // Add more countries and states/provinces as needed
+        };
+
+        const cityByState = {
+            'New York': ['New York City', 'Buffalo', 'Rochester', 'Syracuse'],
+            'California': ['Los Angeles', 'San Francisco', 'San Diego', 'Sacramento'],
+            'Illinois': ['Chicago', 'Aurora', 'Naperville', 'Peoria'],
+            'Texas': ['Houston', 'Dallas', 'Austin', 'San Antonio'],
+            'Ontario': ['Toronto', 'Ottawa', 'Mississauga', 'Brampton'],
+            'British Columbia': ['Vancouver', 'Victoria', 'Richmond', 'Burnaby'],
+            'Quebec': ['Montreal', 'Quebec City', 'Laval', 'Gatineau'],
+            'Alberta': ['Calgary', 'Edmonton', 'Red Deer', 'Lethbridge'],
+            'England': ['London', 'Manchester', 'Birmingham', 'Liverpool'],
+            'Scotland': ['Edinburgh', 'Glasgow', 'Aberdeen', 'Dundee'],
+            'Wales': ['Cardiff', 'Swansea', 'Newport', 'Wrexham'],
+            'Northern Ireland': ['Belfast', 'Derry', 'Lisburn', 'Newry'],
+            'New South Wales': ['Sydney', 'Newcastle', 'Central Coast', 'Wollongong'],
+            'Victoria': ['Melbourne', 'Geelong', 'Ballarat', 'Bendigo'],
+            'Queensland': ['Brisbane', 'Gold Coast', 'Cairns', 'Townsville'],
+            'Western Australia': ['Perth', 'Mandurah', 'Bunbury', 'Albany'],
+            'Maharashtra': ['Mumbai', 'Pune', 'Nagpur', 'Nashik'],
+            'Delhi': ['New Delhi', 'Delhi', 'Noida', 'Gurgaon'],
+            'Karnataka': ['Bangalore', 'Mangalore', 'Hubli', 'Belgaum'],
+            'Telangana': ['Hyderabad', 'Warangal', 'Khammam', 'Nizamabad'],
+            'Bavaria': ['Munich', 'Nuremberg', 'Augsburg', 'Regensburg'],
+            'Berlin': ['Berlin'], // Berlin is a city-state
+            'Hamburg': ['Hamburg'], // Hamburg is a city-state
+            'Hesse': ['Frankfurt', 'Wiesbaden', 'Darmstadt', 'Kassel'],
+            'Île-de-France': ['Paris', 'Versailles', 'Boulogne-Billancourt', 'Nanterre'],
+            'Auvergne-Rhône-Alpes': ['Lyon', 'Grenoble', 'Clermont-Ferrand', 'Saint-Étienne'],
+            'Provence-Alpes-Côte d\'Azur': ['Marseille', 'Nice', 'Toulon', 'Aix-en-Provence'],
+            'Hauts-de-France': ['Lille', 'Amiens', 'Calais', 'Douai'],
+            'Tokyo': ['Tokyo'], // Tokyo is a prefecture
+            'Osaka': ['Osaka'], // Osaka is a prefecture
+            'Kyoto': ['Kyoto'], // Kyoto is a prefecture
+            'Nagoya': ['Nagoya'], // Nagoya is a city
+            'Beijing': ['Beijing'], // Beijing is a municipality
+            'Shanghai': ['Shanghai'], // Shanghai is a municipality
+            'Guangdong': ['Guangzhou', 'Shenzhen', 'Dongguan', 'Foshan'],
+            'Zhejiang': ['Hangzhou', 'Ningbo', 'Wenzhou', 'Jinhua'],
+            'São Paulo': ['São Paulo'], // São Paulo is a state capital
+            'Rio de Janeiro': ['Rio de Janeiro'], // Rio de Janeiro is a state capital
+            'Minas Gerais': ['Belo Horizonte', 'Uberlândia', 'Contagem', 'Juiz de Fora'],
+            'Bahia': ['Salvador', 'Feira de Santana', 'Vitória da Conquista', 'Camaçari'],
+            'Ciudad de México': ['Mexico City'], // Ciudad de México is a federal entity
+            'Jalisco': ['Guadalajara', 'Puerto Vallarta', 'Tlaquepaque', 'Tequila'],
+            'Nuevo León': ['Monterrey', 'San Pedro Garza García', 'Santa Catarina', 'Apodaca'],
+            'Puebla': ['Puebla'], // Puebla is a state capital
+        };
+
+        document.getElementById('country').addEventListener('change', function() {
+            const country = this.value;
+            const stateSelect = document.getElementById('state');
+            stateSelect.innerHTML = '<option value="">Select State/Province</option>';
+
+            const citySelect = document.getElementById('city');
+            citySelect.innerHTML = '<option value="">Select City</option>';
+
+            if (country && stateByCountry[country]) {
+                stateByCountry[country].forEach(state => {
+                    const option = document.createElement('option');
+                    option.value = state;
+                    option.textContent = state;
+                    stateSelect.appendChild(option);
+                });
+            }
+        });
+
+        document.getElementById('state').addEventListener('change', function() {
+            const state = this.value;
+            const citySelect = document.getElementById('city');
+            citySelect.innerHTML = '<option value="">Select City</option>';
+
+            if (state && cityByState[state]) {
+                cityByState[state].forEach(city => {
+                    const option = document.createElement('option');
+                    option.value = city;
+                    option.textContent = city;
+                    citySelect.appendChild(option);
+                });
+            }
+        });
+
+        document.getElementById('submit').addEventListener('click', function() {
+            const country = document.getElementById('country').value;
+            const state = document.getElementById('state').value;
+            const city = document.getElementById('city').value;
+
+            const result = document.getElementById('result');
+            result.textContent = `Selected Country: ${country}, State/Province: ${state}, City: ${city}`;
+        });
+
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        
+
+    </script> -->
+  
+
+
+
+  <!-- <section class="about-us" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h6>About Us</h6>
+            <h4>Know Us Better</h4>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="naccs">
+            <div class="tabs">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="menu">
+                    <div class="active gradient-border"><span>Web Design</span></div>
+                    <div class="gradient-border"><span>Graphics</span></div>
+                    <div class="gradient-border"><span>Web Coding</span></div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="main-list">
+                          <span class="title">Project Title</span>
+                          <span class="title">Budget</span>
+                          <span class="title">Deadline</span>
+                          <span class="title">Client</span>
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">Website Redesign</span>
+                          <span class="item">$1,500 to $2,200</span>
+                          <span class="item">2022 Dec 12</span>
+                          <span class="item">Web Biz</span>
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">Website Renovation</span>
+                          <span class="item">$2,500 to $3,600</span>
+                          <span class="item">2022 Dec 10</span>
+                          <span class="item">Online Ads</span>
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">Marketing Plan</span>
+                          <span class="item">$2,500 to $4,200</span>
+                          <span class="item">2022 Dec 8</span>
+                          <span class="item">Web Biz</span>
+                        </div>
+                        <div class="list-item last-item">
+                          <span class="item item-title">All-new Website</span>
+                          <span class="item">$3,000 to $6,600</span>
+                          <span class="item">2022 Dec 2</span>
+                          <span class="item">Web Presence</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="main-list">
+                          <span class="title">Project Title</span>
+                          <span class="title">Budget</span>
+                          <span class="title">Deadline</span>
+                          <span class="title">Client</span>
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">Graphics Redesign</span>
+                          <span class="item">$500 to $800</span>
+                          <span class="item">2022 Nov 24</span>
+                          <span class="item">Media One</span>
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">Digital Graphics</span>
+                          <span class="item">$1,500 to $3,000</span>
+                          <span class="item">2022 Nov 18</span>
+                          <span class="item">Second Media</span>
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">New Artworks</span>
+                          <span class="item">$2,200 to $4,400</span>
+                          <span class="item">2022 Nov 10</span>
+                          <span class="item">Artwork Push</span>
+                        </div>
+                        <div class="list-item last-item">
+                          <span class="item item-title">Complex Arts</span>
+                          <span class="item">$1,100 to $2,400</span>
+                          <span class="item">2022 Nov 3</span>
+                          <span class="item">Media One</span>
+                        </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="main-list">
+                          <span class="title">Project Title</span>
+                          <span class="title">Budget</span>
+                          <span class="title">Estimated</span>
+                          <span class="title">Technology</span>
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">Backend Coding</span>
+                          <span class="item">$2,000 to $5,000</span>
+                          <span class="item">2022 Nov 28</span>
+                          <span class="item">PHP MySQL</span>
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">New Web App</span>
+                          <span class="item">$1,500 to $3,000</span>
+                          <span class="item">2022 Nov 18</span>
+                          <span class="item">Python Programming</span>
+                        </div>
+                        <div class="list-item">
+                          <span class="item item-title">Frontend Interactions</span>
+                          <span class="item">$3,000 to $6,000</span>
+                          <span class="item">2022 Nov 10</span>
+                          <span class="item">JavaScripts</span>
+                        </div>
+                        <div class="list-item last-item">
+                          <span class="item item-title">Video Creations</span>
+                          <span class="item">$1,800 to $4,400</span>
+                          <span class="item">2022 Nov 3</span>
+                          <span class="item">Multimedia</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="col-lg-4">
+          <div class="right-content">
+            <h4>Please tell us about your idea and how you want it to be</h4>
+            <p>You are allowed to use this template for your websites. You are <b>NOT allowed</b> to redistribute the
+              template ZIP file on any other template websites.<br><br>Thank you for downloading and using our
+              templates. Please tell your friends about our website.</p>
+            <div class="green-button">
+              <a href="about-us.html">Discover More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="calculator">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="left-image">
+            <img src="assets/images/calculator-image.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="section-heading">
+            <h6>Your Feedback</h6>
+            <h4></h4>
+          </div>
+          <form id="calculate" action="" method="get">
+            <div class="row">
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="name">Your Name</label>
+                  <input type="name" name="name" id="name" placeholder="" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="email">Your Email</label>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="subject">Subject</label>
+                  <input type="subject" name="subject" id="subject" placeholder="" autocomplete="on">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="chooseOption" class="form-label">Your Reason</label>
+                  <select name="Category" class="form-select" aria-label="Default select example" id="chooseOption"
+                    onchange="this.form.click()">
+                    <option selected>Choose an Option</option>
+                    <option type="checkbox" name="option1" value="Online Banking">Online Banking</option>
+                    <option value="Financial Control">Financial Control</option>
+                    <option value="Yearly Profit">Marketing</option>
+                    <option value="Crypto Investment">Data Enginer </option>
+                  </select>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="orange-button">Submit Now</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h6>Testimonials</h6>
+            <h4>What They Say</h4>
+          </div>
+        </div>
+        <div class="col-lg-10 offset-lg-1">
+          <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
+            <div class="item">
+              <i class="fa fa-quote-left"></i>
+              <p>“Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam volutpat
+                posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in euismod ligula. Aliquam vel
+                scelerisque elit.”</p>
+              <h4>David Eigenberg</h4>
+              <span>CEO of Mexant</span>
+              <div class="right-image">
+                <img src="assets/images/testimonials-01.jpg" alt="">
+              </div>
+            </div>
+            <div class="item">
+              <i class="fa fa-quote-left"></i>
+              <p>“Etiam id ligula risus. Fusce fringilla nisl nunc, nec rutrum lectus cursus nec. In blandit nibh dolor,
+                at rutrum leo accumsan porta. Nullam pulvinar eros porttitor risus condimentum tempus.”</p>
+              <h4>Andrew Garfield</h4>
+              <span>CTO of Mexant</span>
+              <div class="right-image">
+                <img src="assets/images/testimonials-01.jpg" alt="">
+              </div>
+            </div>
+            <div class="item">
+              <i class="fa fa-quote-left"></i>
+              <p>“Ut dictum vehicula massa, ac pharetra leo tincidunt eu. Phasellus in tristique magna, ac gravida leo.
+                Integer sed lorem sapien. Ut viverra mauris sed lobortis commodo.”</p>
+              <h4>George Lopez</h4>
+              <span>Crypto Manager</span>
+              <div class="right-image">
+                <img src="assets/images/testimonials-01.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="partners">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/swiper.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    var interleaveOffset = 0.5;
+
+    var swiperOptions = {
+      loop: true,
+      speed: 1000,
+      grabCursor: true,
+      watchSlidesProgress: true,
+      mousewheelControl: true,
+      keyboardControl: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        progress: function () {
+          var swiper = this;
+          for (var i = 0; i < swiper.slides.length; i++) {
+            var slideProgress = swiper.slides[i].progress;
+            var innerOffset = swiper.width * interleaveOffset;
+            var innerTranslate = slideProgress * innerOffset;
+            swiper.slides[i].querySelector(".slide-inner").style.transform =
+              "translate3d(" + innerTranslate + "px, 0, 0)";
+          }
+        },
+        touchStart: function () {
+          var swiper = this;
+          for (var i = 0; i < swiper.slides.length; i++) {
+            swiper.slides[i].style.transition = "";
+          }
+        },
+        setTransition: function (speed) {
+          var swiper = this;
+          for (var i = 0; i < swiper.slides.length; i++) {
+            swiper.slides[i].style.transition = speed + "ms";
+            swiper.slides[i].querySelector(".slide-inner").style.transition =
+              speed + "ms";
+          }
+        }
+      }
+    };
+
+    var swiper = new Swiper(".swiper-container", swiperOptions);
+
+  
+
+  </script>
+
+<script type="text/javascript">
+  (function(d, m){
+      var kommunicateSettings = 
+          {"appId":"bbef87c5e99d35ddbe5092f8a2b20741","popupWidget":true,"automaticChatOpenOnNavigation":true};
+      var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+      s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+      var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+      window.kommunicate = m; m._globals = kommunicateSettings;
+  })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+
+
+<script src="index.js"></script>
+</body>
+
+</html>
